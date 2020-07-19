@@ -1,0 +1,2 @@
+& "C:\Program Files (x86)\IntelSWTools\openvino\bin\setupvars.bat"
+python run_inference.py -fd ./models/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001 -fl ./models/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009 -hp ./models/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001 -ge ./models/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002 -i src/demo.mp4 -flags fd hp fld ge
