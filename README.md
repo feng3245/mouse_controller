@@ -36,18 +36,18 @@ This code makes use of python mixin to reduce duplicated code. You will find mos
 loading, checking plugins, preprocessing input and prediction in side of model.py where as the different models inheriting 
 model.py will implement their own post processing to shape the output for the next model.
 
-fd is required which specify model location for Face Detection model
-fl is required which specify model location for Facial Landmark Detection model
-hp is required which specify model location for  Head Pose Estimation model
-ge is required which Specify Specify model location for Gaze Estimation model
-i is required which specify Path to video file or enter cam for webcam
-flags is not required which Specify the flags from fd, fl, hp, ge like --flags fd hp fl (Seperate each flag by space) to see the visualization of different model outputs of each frame, fd for Face Detection, fl for Facial Landmark Detection hp for Head Pose Estimation, ge for Gaze Estimation.
-l is not required which specify MKLDNN (CPU)-targeted custom layers. Absolute path to a shared library with the kernels impl.")
-prob is not required which specify probability threshold for model to detect the face accurately from the video frame.
-d is not required which specify the target device to infer on: 
-   CPU, GPU, FPGA or MYRIAD is acceptable. Sample 
-   will look for a suitable plugin for device 
-   specified (CPU by default)
+fd is required which specify model location for Face Detection model <br/>
+fl is required which specify model location for Facial Landmark Detection model <br/>
+hp is required which specify model location for  Head Pose Estimation model <br/>
+ge is required which Specify Specify model location for Gaze Estimation model <br/>
+i is required which specify Path to video file or enter cam for webcam <br/>
+flags is not required which Specify the flags from fd, fl, hp, ge like --flags fd hp fl (Seperate each flag by space) to see the visualization of different model outputs of each frame, fd for Face Detection, fl for Facial Landmark Detection hp for Head Pose Estimation, ge for Gaze Estimation. <br/>
+l is not required which specify MKLDNN (CPU)-targeted custom layers. Absolute path to a shared library with the kernels impl.")<br/>
+prob is not required which specify probability threshold for model to detect the face accurately from the video frame.<br/>
+d is not required which specify the target device to infer on: <br/>
+   CPU, GPU, FPGA or MYRIAD is acceptable. Sample <br/>
+   will look for a suitable plugin for device <br/>
+   specified (CPU by default)<br/>
 ms is not required which specify speed of mouse movement (fast, medium, slow)
 
 ## Benchmarks
